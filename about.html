@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Your Name</title>
+  <meta name="description" content="About page" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            fontFamily: {
+              mono: ['"JetBrains Mono"', 'monospace'],
+              title: ['"Oswald"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-zinc-900 antialiased font-mono">
+  <a href="/" class="font-title font-bold tracking-wide pl-8 pt-6 flex items-center">
+    <span class="text-xl">i'm making a movie [dot] com</span>
+  </a>
+
+  <div class="mt-16 flex">
+    <!-- Sidebar / Nav -->
+    <aside class="h-full w-80 bg-white flex flex-col items-start px-8 font-extralight">
+        <nav class="flex flex-col gap-2 text-sm w-full">
+          <a href="/premise.html" class="hover:text-rose-400">Premise</a>
+          <a href="/plot.html" class="hover:text-rose-400">Plot</a>
+          <a href="/cast.html" class="hover:text-rose-400">Cast</a>
+          <a href="/screenplay.html" class="hover:text-rose-400">Screenplay</a>
+          <a href="/about.html" class="text-rose-600">About</a>
+        </nav>
+    </aside>
+
+    <!-- Portrait + Bio -->
+    <main class="flex-1 text-sm">
+      <!-- Image -->
+      <figure class="float-left w-[300px] mr-8 mb-4">
+        <img
+          src="https://static.wixstatic.com/media/e1bbe4_0fd367e765084647a3e2d1c0c7c26137~mv2.jpg"
+          alt="Portrait of Your Name"
+          class="aspect-[3/5] w-full object-cover ">
+      </figure>
+
+      <!-- Bio text -->
+      <article class="prose prose-zinc max-w-none prose-p:leading-relaxed clear-both:last">
+        <p>
+          I'm Alejandro Solano and I'm making a movie.
+        </p>
+        <p class="mt-6">
+          There are some things I want to prove:
+          <ul class="mt-2">
+            <li>- You're never too old to start something completely new to you.</li>
+            <li>- There's no need for formal education to create something meaningful. You learn by doing.</li>
+          </ul>
+        </p>
+      </article>
+    </main>
+
+
+    <aside class="w-[400px]"></aside>
+  </div>
+</body>
+</html>

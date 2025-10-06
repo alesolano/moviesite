@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Your Name</title>
+  <meta name="description" content="About page" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            fontFamily: {
+              mono: ['"JetBrains Mono"', 'monospace'],
+              title: ['"Oswald"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-zinc-900 antialiased font-mono">
+  <a href="/" class="font-title font-bold tracking-wide pl-8 pt-6 flex items-center">
+    <span class="text-xl">i'm making a movie [dot] com</span>
+  </a>
+
+  <div class="mt-16 flex">
+    <!-- Sidebar / Nav -->
+    <aside class="h-full w-80 bg-white flex flex-col items-start px-8 font-extralight">
+        <nav class="flex flex-col gap-2 text-sm w-full">
+          <a href="/premise.html" class="hover:text-rose-400">Premise</a>
+          <a href="/plot.html" class="hover:text-rose-400">Plot</a>
+          <a href="/cast.html" class="hover:text-rose-400">Cast</a>
+          <a href="/screenplay.html" class="hover:text-rose-400">Screenplay</a>
+          <a href="/about.html" class="hover:text-rose-400">About</a>
+        </nav>
+    </aside>
+
+    <!-- Portrait + Bio -->
+    <main class="flex-1 text-sm flex flex-col items-center justify-center">
+      <!-- Image -->
+      <figure>
+        <img
+          src="./logo.png"
+          alt="Movie logo"
+        class="aspect-[1/1] w-32 object-cover ">
+      </figure>
+
+      <span class="mt-1 ml-1 text-base text-center">Furros</span>
+    </main>
+
+
+    <aside class="w-[400px]"></aside>
+  </div>
+
+  <!-- Footer -->
+  <!-- <footer class="ml-32">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-zinc-500">
+      © <span id="year"></span> Copyright
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script> -->
+</body>
+</html>
